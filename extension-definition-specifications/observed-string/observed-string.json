@@ -1,0 +1,73 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "https://raw.githubusercontent.com/oasis-open/cti-stix-common-objects/main/extension-definition-specifications/observed-string/observed-string.json",
+    "title": "Observed String",
+    "description": "This object stores a value in Unicode along with its purpose.  This SHOULD NOT be used to transmit binary strings.  Those SHOULD be sent using the Artifact object.",
+    "type": "object",
+    "allOf": [
+        {
+            "$ref": "https://raw.githubusercontent.com/oasis-open/cti-stix2-json-schemas/master/schemas/common/cyber-observable-core.json"
+        },
+        {
+            "required": [
+                "type",
+                "value",
+                "purpose",
+                "extensions"
+            ],
+            "additionalProperties": false,
+            "properties": {
+                "id": {
+                    "pattern": "^observed-string--"
+                },
+                "type": {
+                    "type": "string",
+                    "const": "observed-string"
+                },
+                "spec_version": {
+                    "type": "string",
+                    "const": "2.1"
+                },
+                "purpose": {
+                    "type": "string",
+                    "description": "The purpose that this Observed String holds within the sample it was extracted from.  \nThe value of this property SHOULD come from the observed-string-purpose-ov open vocabulary.",
+                    "minLength": 1,
+                    "not": {
+                        "pattern": "[_ A-Z]",
+                        "description": "Purpose should be lower case without underscores or spaces in order to conform with open vocabulary standards."
+                    }
+                },
+                "value": {
+                    "type": "string",
+                    "description": "The value of the observed string in Unicode.",
+                    "minLength": 1
+                },
+                "object_marking_refs": {
+
+                }, 
+                "granular_markings": {
+                    
+                }, 
+                "defanged": {
+
+                },
+                "extensions": {
+                    "type": "object",
+                    "required": ["extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d"],
+                    "properties": {
+                        "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                            "type": "object",
+                            "required": ["extension_type"],
+                            "properties": {
+                                "extension_type": {
+                                    "type": "string",
+                                    "const": "new-sco"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}

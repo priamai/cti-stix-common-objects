@@ -1,0 +1,153 @@
+{
+    "type": "bundle",
+    "id": "bundle--7652c5ca-72a4-43d6-8985-f4cc7ec4b8ad",
+    "objects": [
+        {
+            "type": "file",
+            "spec_version": "2.1",
+            "id": "file--92dd2e9e-2474-5d83-b773-afa6342c41e7",
+            "name": "Sample.exe"
+        },
+        {
+            "type": "malware-analysis",
+            "spec_version": "2.1",
+            "id": "malware-analysis--a1ff9293-8d42-47ef-8440-d06360202533",
+            "created": "2022-05-26T20:21:12.751031Z",
+            "modified": "2022-05-26T20:21:12.751031Z",
+            "product": "strings",
+            "analysis_sco_refs": [
+                "observed-string--c7609355-8be6-5af7-a072-039a6c853a1f",
+                "observed-string--73dfc78c-4e14-5c6d-8845-2f7ee313e4ab",
+                "observed-string--91952511-4ebc-5aaa-9e02-c786481fec22",
+                "observed-string--07f19c2a-6a6e-5a12-8b83-cf15495f8705",
+                "observed-string--8d4e1872-484a-5c6e-b9ac-c7e085a277d0",
+                "observed-string--08d54d95-d078-5f3d-ad3e-d751e235a28f",
+                "observed-string--aa7af313-99b4-5135-bdb6-07a2598f4769",
+                "observed-string--04de9f1b-2232-5bcc-ac93-1028126a73c5",
+                "observed-string--3673447a-da31-5ea1-b43b-f90756ca4470",
+                "observed-string--915adce5-1bc5-5d7b-9483-2ab1209f498e"
+            ],
+            "sample_ref": "file--92dd2e9e-2474-5d83-b773-afa6342c41e7"
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--c7609355-8be6-5af7-a072-039a6c853a1f",
+            "value": "0fC0Gpnccrxc1YDEVkwJLjCEImtfgo5plWBMwqxulsbwVC6la4",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--73dfc78c-4e14-5c6d-8845-2f7ee313e4ab",
+            "value": "MNWbdSguHVxEXMGJnU5uQinpw50uASyNje5wiDRB8r9DaELbIR",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--91952511-4ebc-5aaa-9e02-c786481fec22",
+            "value": "pLZrtu20hVlPBUlVVA6lycTUYyX4d5rqhDiUEZIoseCTe8ZBRs",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--07f19c2a-6a6e-5a12-8b83-cf15495f8705",
+            "value": "LJXiM9UxJPX7z1qqA1NdFXxb8VjRJl2xXNTXieoxTdywzar232",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--8d4e1872-484a-5c6e-b9ac-c7e085a277d0",
+            "value": "Zdyweb8gS8kYu8AsK4rAFX2cyV1TjWxk2kLqvNnUuU76t6jAs0",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--08d54d95-d078-5f3d-ad3e-d751e235a28f",
+            "value": "II3n9mQSLSAaYzACYpb8xuSqpoVK1Tp671tTIS2OYcaQRvfj9F",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--aa7af313-99b4-5135-bdb6-07a2598f4769",
+            "value": "gX1Y2aWGyq3V2conGm1qsKmy0ymOmLwyz7RsqtBRDib6gb6fQs",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--04de9f1b-2232-5bcc-ac93-1028126a73c5",
+            "value": "5BUsXZ9G0tdW0z8nwtALLaS6fLOwrZCXSRpgJzJpQvmIIgeM9V",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--3673447a-da31-5ea1-b43b-f90756ca4470",
+            "value": "t4X9hVgiyv66newXhMZJo6ENdLOO3JFKclmTD9HLLefx0m3HD3",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        },
+        {
+            "type": "observed-string",
+            "spec_version": "2.1",
+            "id": "observed-string--915adce5-1bc5-5d7b-9483-2ab1209f498e",
+            "value": "nz2inKnnNupqt1nphUK366twH8Ps5PIPBjajdustbOLrJKZpov",
+            "purpose": "unknown",
+            "extensions": {
+                "extension-definition--8b1aa84c-5532-4c69-a8e7-b6170facfd3d": {
+                    "extension_type": "new-sco"
+                }
+            }
+        }
+    ]
+}
