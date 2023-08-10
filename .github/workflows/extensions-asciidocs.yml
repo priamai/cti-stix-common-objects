@@ -6,6 +6,11 @@ on:
     branches: [ "master", "main" ]
   workflow_dispatch:
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,3 +26,19 @@ jobs:
         with:
           name: extensions
           path: temp/*
+
+      - name: Setup Pages
+        id: pages
+        if: github.ref == 'refs/heads/main'
+        uses: actions/configure-pages@v3
+
+      - name: Upload Pages
+        uses: actions/upload-pages-artifact@v2
+        if: github.ref == 'refs/heads/main'
+        with:
+          path: '_site'
+
+      - name: Deploy Pages
+        id: deployment
+        if: github.ref == 'refs/heads/main'
+        uses: actions/deploy-pages@v2
