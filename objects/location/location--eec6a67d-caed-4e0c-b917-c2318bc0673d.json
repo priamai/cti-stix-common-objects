@@ -1,0 +1,16 @@
+{
+    "type": "bundle",
+    "id": "bundle--cc992d50-c6ff-423a-b23c-ced1154c53e7",
+    "objects": [
+        {
+            "type": "location",
+            "spec_version": "2.1",
+            "id": "location--eec6a67d-caed-4e0c-b917-c2318bc0673d",
+            "created_by_ref": "identity--8ce3f695-d5a4-4dc8-9e93-a65af453a31a",
+            "created": "2023-12-08T00:28:45.743179Z",
+            "modified": "2023-12-08T00:28:45.743179Z",
+            "name": "Türkiye",
+            "country": "TR"
+        }
+    ]
+}
